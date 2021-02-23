@@ -46,6 +46,8 @@ methodology within our model, this was very impactful to the B.L.E.U. score.
 
 ### About the Model
 Here is an image showcasing the archicture of the model:
+
+
 ![RNN+LSTM Model's Architecture](https://github.com/jhagg26/Charlotte-Hornets-Game-Summary-Generator/blob/main/ModelArchitecture.PNG?raw=true)
 
 Some of the hyperparameters for this model are:
