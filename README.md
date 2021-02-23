@@ -3,7 +3,7 @@
 ## Brief Summary
 This project uses a RNN+LSTM to generate summaries about Charlotte Hornets basketball games.
 When building the model, I experimented with our Baseline Model’s structure and ended up utilizing a
-“Stacked LSTM” model and it led to getting promising results. I wanted to generate
+“Stacked LSTM” within the model and it led to getting promising results. I wanted to generate
 summaries because they are something that is typically written by humans, sports
 journalism has been around for a long time but I thought it would be an interesting
 thing to automate.
