@@ -44,6 +44,10 @@ placed in the middle of the model, I found that this yielded the best results wh
 experimenting with various placements of it. I also feature a Stacked LSTM
 methodology within our model, this was very impactful to the B.L.E.U. score.
 
+### About the Model
+Here is an image showcasing the archicture of the model:
+![alt text](https://github.com/[jhagg26]/[/Charlotte-Hornets-Game-Summary-Generator]/blob/[master]/ModelPerformance.PNG?raw=true)
+
 ## Measuring Performance
 For this model I used two metrics to evaluate the performance of the mode B.L.E.U.
 and R.O.U.G.E.. I selected these two metrics because they are referred to as quality
