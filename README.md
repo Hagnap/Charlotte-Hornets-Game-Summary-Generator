@@ -1,2 +1,59 @@
 # CharlotteHornetsGameSummaryGenerator
+
+## Brief Summary
 This project uses a RNN+LSTM to generate summaries about Charlotte Hornets basketball games.
+When building the model, I experimented with our Baseline Model’s structure and ended up utilizing a
+“Stacked LSTM” model and it led to getting promising results. I wanted to generate
+summaries because they are something that is typically written by humans, sports
+journalism has been around for a long time but I thought it would be an interesting
+thing to automate.
+
+While working on this project I elected to
+generate a summary for an Atlanta Hawks vs Charlotte Hornets game. I chose the
+Hornets since they play in Charlotte and the Hawks were selected because they are in
+the same division as the Hornets so they play three or four games a season. This allows
+for a deeper corpus when compared to teams like the Phoenix Suns who are not
+in their division.
+
+## Data Used
+To do this project I had used to the NBA_Data provided by Rotowire. The dataset
+can be found in this repo. The dataset has information about every basketball from
+the 2015-2017 seasons.
+
+## The Approach Taken
+### Software Used
+To do generate a summary I had utilized the Tensorflow module to construct a 
+Recurrent Neural Network with a Long Short Term Memory Component. To manipulate 
+the data, Pandas was used. To conduct tokenization, lemmetization, getting the BLEU Score,
+and utilizing smoothing methods; NLTK was used. To get the ROUGE Score, the PyPi module was
+used.
+
+### Techniques Used
+To generate text for this task a RNN+LSTM model was used. Prior to generating the
+task I first had to manipulate the data and prepare for it being inputted into the model.
+To do this I created a corpus for each team and stored their respective summaries into
+their corresponding corpus. After that I took two corpus, one for each team in a game
+(two teams in a game at the same time) and created two mappings. One mapping for
+indexes to characters and the other for characters to indexes. After that I took the
+corpus containing a text for each of the team teams and mapped the letters in their
+respective corpus to indices and characters respectively. This allowed the model to process the
+text in a numerical form.
+Once the text was processed, it was passed into our RNN+LSTM model. Within the
+model I used the Adam optimizer algorithm and a Dropout layer. The Dropout layer was
+placed in the middle of the model, I found that this yielded the best results when
+experimenting with various placements of it. I also feature a Stacked LSTM
+methodology within our model, this was very impactful to the B.L.E.U. score.
+
+## Measuring Performance
+For this model I used two metrics to evaluate the performance of the mode B.L.E.U.
+and R.O.U.G.E.. I selected these two metrics because they are referred to as quality
+metrics for Natural Language Processing tasks.
+
+### Scores
+**BLEU:** 0.38625/1.
+
+**ROUGE:**  
+  - Precision: 0.4820477/1
+  - Recall: 0.106626/1
+  - FMeasure: 0.1723767/1
+
