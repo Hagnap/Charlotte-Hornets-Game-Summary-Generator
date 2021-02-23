@@ -57,3 +57,21 @@ metrics for Natural Language Processing tasks.
   - Recall: 0.106626/1
   - FMeasure: 0.1723767/1
 
+According
+to the Google Cloud Platform, the score of 0.38625 can mean that our model is
+able to generate “Understandable to good translations”
+
+### An Example a Generated Summary
+*"cent from the free - throw line . The team 's best
+scorer Kemba Walker had an off night , going just 3 -
+for - 14 for nine points . Forward Marvin Williams was
+one of the few bright spots , contributing a game -
+high 16 points and pulling down nine rebounds . The
+Hornets will host the sliding Phoeni"*
+
+### Performance Over Time (ie Performance During Development)
+**Metrics**                   **Baseline Model      Final Model**
+*B.L.E.U.*                     7.9857408e-232        0.38625326
+*R.O.U.G.E. Precision*         0.1251216569          0.48204773
+*R.O.U.G.E. Recall*            0.1068117968          0.1066263
+*R.O.U.G.E. FMeasure*          0.1131416947          0.1723767
