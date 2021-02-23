@@ -46,7 +46,18 @@ methodology within our model, this was very impactful to the B.L.E.U. score.
 
 ### About the Model
 Here is an image showcasing the archicture of the model:
-![RNN+LSTM Model](https://github.com/jhagg26/Charlotte-Hornets-Game-Summary-Generator/blob/main/ModelPerformance.PNG?raw=true)
+![RNN+LSTM Model's Architecture](https://github.com/jhagg26/Charlotte-Hornets-Game-Summary-Generator/blob/main/ModelArchitecture.PNG?raw=true)
+
+Some of the hyperparameters for this model are:
+  - Number of Epochs (2)
+  - Text Diversity (0.25)
+  - Step Size (2)
+  - Window Size (350)
+  - Range for the Starting Point ([0, ((length of the corpus) - (average length of a summary) - 1)])
+
+The model uses the window size value decide how big the splits are when it has to split the data into partitions while the it is training.
+The model samples an ‘index’ and uses that to generate a probability as its probability. The model uses the given probability to generate an index that it thinks fits the summary, the index is then converted to a character and added to the summary.
+
 
 ## Measuring Performance
 For this model I used two metrics to evaluate the performance of the mode B.L.E.U.
@@ -83,3 +94,13 @@ Hornets will host the sliding Phoeni"*
 | *R.O.U.G.E. FMeasure*  | 0.1131416947       | 0.1723767       |
 
 
+Here is an image to display these results over project iterations:
+![RNN+LSTM Model's Performance](https://github.com/jhagg26/Charlotte-Hornets-Game-Summary-Generator/blob/main/ModelPerformance.PNG?raw=true)
+
+### Observations Made During Development
+- The largest improvements were implementing multiple LSTM layers and adjusting value of the Dropout layer to 0.5
+- Text diversity values greater than 0.35 generated gibberish and values smaller than 0.1 generated repetitive summaries.
+- Having more than 2 epochs did barely improved performance in some cases and in other cases it caused our model to have a decreased performance. 
+- Like the number of epochs, altering the value for the batch size had to little to no impact on the model’s performance. 
+- Window sizes that were too small created the same exact summary multiple times with little to no variation
+- When summaries generated had over three hundred characters it caused the model to generate more white space than text after generating about three hundred characters.
