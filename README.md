@@ -70,11 +70,6 @@ high 16 points and pulling down nine rebounds . The
 Hornets will host the sliding Phoeni"*
 
 ### Performance Over Time (ie Performance During Development)
-**Metrics**                   **Baseline Model      Final Model**
-*B.L.E.U.*                     7.9857408e-232        0.38625326
-*R.O.U.G.E. Precision*         0.1251216569          0.48204773
-*R.O.U.G.E. Recall*            0.1068117968          0.1066263
-*R.O.U.G.E. FMeasure*          0.1131416947          0.1723767
 
 | **Metrics**            | **Baseline Model** | **Final Model** |
 | :----------------------| :------------------|:----------------|
@@ -82,3 +77,5 @@ Hornets will host the sliding Phoeni"*
 | *R.O.U.G.E. Precision* | 0.1251216569       | 0.48204773      |
 | *R.O.U.G.E. Recall*    | 0.1068117968       | 0.1066263       |
 | *R.O.U.G.E. FMeasure*  | 0.1131416947       | 0.1723767       |
+
+
