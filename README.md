@@ -46,7 +46,7 @@ methodology within our model, this was very impactful to the B.L.E.U. score.
 
 ### About the Model
 Here is an image showcasing the archicture of the model:
-![alt text](https://github.com/[jhagg26]/[/Charlotte-Hornets-Game-Summary-Generator]/blob/[master]/ModelPerformance.PNG?raw=true)
+![RNN+LSTM Model](https://github.com/jhagg26/Charlotte-Hornets-Game-Summary-Generator/blob/main/ModelPerformance.PNG?raw=true)
 
 ## Measuring Performance
 For this model I used two metrics to evaluate the performance of the mode B.L.E.U.
