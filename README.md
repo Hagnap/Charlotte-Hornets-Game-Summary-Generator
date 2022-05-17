@@ -24,7 +24,7 @@ the 2015-2017 seasons.
 ### Software Used
 To do generate a summary I had utilized the Tensorflow module to construct a 
 Recurrent Neural Network with a Long Short Term Memory Component. To manipulate 
-the data, Pandas was used. To conduct tokenization, lemmetization, getting the BLEU Score,
+the data, Pandas was used. To conduct tokenization, lemmatization, getting the BLEU Score,
 and utilizing smoothing methods; NLTK was used. To get the ROUGE Score, the PyPi module was
 used.
 
